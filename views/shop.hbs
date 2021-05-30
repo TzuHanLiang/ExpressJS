@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/product.css" />
+    <title>{{docTitle}}</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a href="/" class="active">Shop</a></li>
+                <li class="main-header__item">
+                    <a href="/admin/add-product">Add product</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {{#if showProduct}}
+        {{#each products}}
+        <div class="grid">
+            <article class="card">
+                <div class="product-item">
+                    <header class="card__header">
+                        {{this.title}}
+                    </header>
+                    <div class="card__image">
+                        <img src="" alt="Product image">
+                    </div>
+                    <div class="card__content">
+                        <h2 class="product__price">$19.99</h2>
+                        <p class="product__description">How will you mearsure your life? Auther: CLAYTON M. CHRISTENSEN
+                        </p>
+                    </div>
+                    <div class="card__actions">
+                        <button type="submit" class="btn">Add to Cart</button>
+                    </div>
+                </div>
+            </article>
+        </div>
+        {{/each}}
+        {{/if}}
+        {{#if noProducts}}
+        <h1>No Products</h1>
+        {{/if}}
+    </main>
+</body>
+
+</html>
