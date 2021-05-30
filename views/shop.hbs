@@ -22,7 +22,7 @@
         </nav>
     </header>
     <main>
-        {{#if showProduct}}
+        {{#if hasProducts}}
         {{#each products}}
         <div class="grid">
             <article class="card">
@@ -45,8 +45,7 @@
             </article>
         </div>
         {{/each}}
-        {{/if}}
-        {{#if noProducts}}
+        {{else}}
         <h1>No Products</h1>
         {{/if}}
     </main>
