@@ -11,6 +11,7 @@ router.get("/", (req, res, next) => {
     docTitle: "Shop",
     path: "shop",
     // layout: false,
+    productCSS: true,
   });
 });
 
