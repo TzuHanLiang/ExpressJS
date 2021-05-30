@@ -12,6 +12,7 @@ router.get("/", (req, res, next) => {
     path: "shop",
     // layout: false,
     productCSS: true,
+    activeShop:true
   });
 });
 
