@@ -8,7 +8,7 @@ const shopRoutes = require("./routes/shop");
 
 const app = express();
 
-app.engine("hbs", exphbs());
+app.engine("hbs", exphbs({defaultLayout: false}));
 app.set("view engine", "hbs");
 app.set("views", "views");
 

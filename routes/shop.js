@@ -10,7 +10,7 @@ router.get("/", (req, res, next) => {
     hasProducts: adminData.products.length > 0,
     docTitle: "Shop",
     path: "shop",
-    layout: false,
+    // layout: false,
   });
 });
 
