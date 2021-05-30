@@ -8,9 +8,6 @@ router.get("/add-product", (req, res, next) => {
   res.render("add-product", {
     docTitle: "Add Product",
     path: "add-product",
-    activeAddProduct: true,
-    formCSS: true,
-    productCSS: true,
   });
 });
 

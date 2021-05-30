@@ -6,12 +6,9 @@ const router = express.Router();
 
 router.get("/", (req, res, next) => {
   res.render("shop", {
-    products: adminData.products,
-    hasProducts: adminData.products.length > 0,
     docTitle: "Shop",
+    products: adminData.products,
     path: "shop",
-    // layout: false,
-    productCSS: true,
   });
 });
 
